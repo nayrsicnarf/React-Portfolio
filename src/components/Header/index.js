@@ -1,5 +1,5 @@
 import React from "react";
-import Selfie from "../../assets/Francis-Selfie.jpeg";
+import Selfie from "../../assets/images/Francis-Selfie.jpeg";
 import Nav from "../Navigation";
 import { currentPage, handlePageChange } from "../Portfolio";
 

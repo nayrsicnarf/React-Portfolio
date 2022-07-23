@@ -1,5 +1,5 @@
 import React from "react";
-import github from "../../assets/icons/github-brands.svg";
+import github from "../../assets/icons/icons8-github-30.png";
 import wishlistkeeper from "../../assets/images/wishlistkeeper.png";
 import randomrecipe from "../../assets/images/rrg-main.png";
 import notetaker from "../../assets/images/Note-Taker-main.png";
