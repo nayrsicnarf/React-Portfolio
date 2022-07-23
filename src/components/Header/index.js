@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import React from "react";
 import Selfie from "../../assets/images/Francis-Selfie.jpeg";
 import Nav from "../Navigation";
