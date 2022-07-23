@@ -1,36 +1,29 @@
 import React from "react";
 
-function Nav({ currentPage, handlePageChange }) {
+function Navigation({ currentPage, handlePageChange }) {
     return (
         <nav>
             <ul>
+
                 <li>
-                    <a href="#about" onClick={() =>
-                        handlePageChange("About")}
-                        className={currentPage === "About"} >
+                    <a href="#about" onClick={() => handlePageChange("About")} className={currentPage === "About"}>
                         About
                     </a>
                 </li>
 
                 <li>
-                    <a href="#work" onClick={() =>
-                        handlePageChange("Projects")}
-                        className={currentPage === "Projects"} >
+                    <a href="#work" onClick={() => handlePageChange("Projects")} className={currentPage === "Projects"}>
                         Work
                     </a>
                 </li>
 
                 <li>
-                    <a href="#contact" onClick={() =>
-                        handlePageChange("Contact")}
-                        className={currentPage === "Contact"} >
+                    <a href="#contact" onClick={() => handlePageChange("Contact")} className={currentPage === "Contact"}>
                         Contact
                     </a>
                 </li>
                 <li>
-                    <a href="#resume" onClick={() =>
-                        handlePageChange("Resume")}
-                        className={currentPage === "Resume"} >
+                    <a href="#resume" onClick={() => handlePageChange("Resume")} className={currentPage === "Resume"}>
                         Resume
                     </a>
                 </li>
@@ -40,4 +33,4 @@ function Nav({ currentPage, handlePageChange }) {
     );
 }
 
-export default Nav;
+export default Navigation;
