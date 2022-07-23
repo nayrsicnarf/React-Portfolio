@@ -20,7 +20,7 @@ In this assignment, we are tasked with creating a React portfolio using the Crea
 
 - [GitHub Repository](https://github.com/nayrsicnarf/react-portfolio.git)
 
-- [Deployment](nayrsicnarf.github.io/react-portfolio/)
+- [Deployment](https://nayrsicnarf.github.io/react-portfolio/)
 
 ## Technologies
 
