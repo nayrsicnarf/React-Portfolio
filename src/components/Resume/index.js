@@ -1,14 +1,23 @@
 import React from 'react';
 
-function Resume() {
+export default function Resume() {
 
     return (
-        <section class="mb-5">
-            <h1 className="resume">Resume</h1>
+        <div>
+            <h1>Resume</h1>
             <hr></hr>
             <div class="row justify-content-center" id="resume">
                 <div class="mt-5 pl-5 pr-5">
                     I have 11+ years as an Electircal Manufacturing Engineer doing both planning work and project work. I am looking to diving head first into the world of web development and hopefully make an impact in the tech world.
+
+                    <h2>Front End Experience</h2>
+                    <p>
+                        HTML, CSS (Bootstrap, Bulma), JavaScript, jQuery, React.js, Angular.js, IndexedDB</p>
+
+                    <h2>Back End Experience</h2>
+                    <p>
+                        Node.js, Express.js, SQL, Sequelize, NoSQL (MongoDB, Mongoose), API's (third-party, RESTful, server-side), Templating (Handlebars)
+                    </p>
 
                     <p class="mt-5">
                         Here's my <a href="https://www.linkedin.com/in/fryaguinaldo" class="link">Linkedin</a>
@@ -19,8 +28,6 @@ function Resume() {
                     </p>
                 </div>
             </div>
-        </section>
+        </div>
     );
 }
-
-export default Resume;

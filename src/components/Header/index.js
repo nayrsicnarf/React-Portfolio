@@ -1,31 +1,21 @@
-import React, { Component } from 'react';
-import { Route, Redirect, HashRouter } from "react-router-dom";
-import Navigation from '../../components/Navigation';
-import About from '../../components/About';
-import Contact from '../../components/Contact';
-import Portfolio from '../../components/Portfolio';
-import Resume from '../../components/Resume';
+import React from "react";
+import Selfie from "../../assets/Francis-Selfie.jpeg";
+import Nav from "../Navigation";
+import { currentPage, handlePageChange } from "../Portfolio";
 
-class Header extends Component {
-    render() {
-        return (
-            <HashRouter>
-                <div className="row Header" id="header">
-                    <a href="https://github.com/nayrsicnarf/react-portfolio.git"><img src="https://img.icons8.com/external-kiranshastry-lineal-color-kiranshastry/344/external-portfolio-advertising-kiranshastry-lineal-color-kiranshastry.png" alt="Francis Ryan Aguinaldo" class="icon" id="breifcase" /></a>
-                    <Navigation />
+function Header(currentPage, handlePageChange) {
+    return (
+        <div>
+            <header>
+                <div className="headerDiv">
+                    <h1>Francis Ryan Aguinaldo</h1>
                 </div>
-
-
-                <div className="content">
-                    <Route exact path="/" render={() => (<Redirect to="/portfolio" />)} />
-                    <Route path="/portfolio" component={Portfolio} />
-                    <Route path="/about" component={About} />
-                    <Route path="/contact" component={Contact} />
-                    <Route path="/resume" component={Resume} />
-                </div>
-            </HashRouter>
-        )
-    }
+            </header>
+            <section id="subheader">
+                <img className="selfie" alt="author selfie" src={Selfie} />
+            </section>
+        </div>
+    );
 }
 
 export default Header;

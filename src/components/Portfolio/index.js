@@ -1,29 +1,35 @@
-import React from 'react';
-import ProjectCards from '../../components/Project'
-import portfolio from '../../portfolio.json'
-import 'bootstrap/dist/css/bootstrap.min.css';
+import React, { useState } from "react";
+import Nav from "./Navigation";
+import About from "./pages/About";
+import Contact from "./pages/Contact";
+import Projects from "./pages/Projects";
+import Resume from "./pages/Resume";
 
-function Wrapper(props) {
-    return <div className="wrapper">{props.children}</div>;
-}
+export default function Portfolio() {
+    const [currentPage, setCurrentPage] = useState("About");
 
-function Portfolio() {
+    const renderPage = () => {
+        if (currentPage === "About") {
+            return <About />;
+        }
+        if (currentPage === "Projects") {
+            return <Projects />;
+        }
+        if (currentPage === "Contact") {
+            return <Contact />;
+        }
+        if (currentPage === "Resume") {
+            return <Resume />;
+        }
+        return <About />;
+    };
+
+    const handlePageChange = (page) => setCurrentPage(page);
 
     return (
-        <section>
-            <div className="project">
-                <h1 className="title">Portfolio</h1>
-                <hr></hr>
-            </div>
-
-            <Wrapper id="card-data">
-                {portfolio.map((project) => (
-                    <ProjectCards key={project.id} image={project.image} name={project.name} github={project.github} deploy={project.deploy} topics={project.topics} />
-                ))}
-            </Wrapper>
-        </section>
-
+        <div>
+            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+            <main>{renderPage()}</main>
+        </div>
     );
 }
-
-export default Portfolio;

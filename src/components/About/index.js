@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 
 function About() {
     return (
@@ -8,7 +8,7 @@ function About() {
 
             <div className="row justify-content-center">
                 <div className="col-10" id="about-section">
-                    <img class="mb-5" src="https://raw.githubusercontent.com/nayrsicnarf/react-portfolio/main/src/assets/Francis's-Selfie%20Medium.jpeg" alt="Francis Aguinaldo" />
+                    <img class="mb-5" src="https://raw.githubusercontent.com/nayrsicnarf/react-portfolio/main/src/assets/Francis-Selfie.jpeg" alt="Francis Aguinaldo" />
                     <h2>
                         WHO AM I
                     </h2>

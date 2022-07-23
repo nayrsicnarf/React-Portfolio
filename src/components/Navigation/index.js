@@ -1,16 +1,48 @@
-import React from 'react';
-import { NavLink } from "react-router-dom";
+import React from "react";
 
-function Navigation(props) {
-
+function Nav({ currentPage, handlePageChange }) {
     return (
-        <div className=" row navigation" id="navigation">
-            <NavLink to="/about">About </NavLink>
-            <NavLink to="/portfolio">Portfolio </NavLink>
-            <NavLink to="/resume">Resume</NavLink>
-            <NavLink to="/contact">Contact </NavLink>
-        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a
+                        href="#about"
+                        onClick={() => handlePageChange("About")}
+                        className={currentPage === "About"}
+                    >
+                        About
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#work"
+                        onClick={() => handlePageChange("Projects")}
+                        className={currentPage === "Projects"}
+                    >
+                        Work
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#contact"
+                        onClick={() => handlePageChange("Contact")}
+                        className={currentPage === "Contact"}
+                    >
+                        Contact
+                    </a>
+                </li>
+                <li>
+                    <a
+                        href="#resume"
+                        onClick={() => handlePageChange("Resume")}
+                        className={currentPage === "Resume"}
+                    >
+                        Resume
+                    </a>
+                </li>
+            </ul>
+        </nav>
     );
 }
 
-export default Navigation;
+export default Nav;
