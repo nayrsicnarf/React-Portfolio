@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Nav from "../Navigation";
+import Navigation from "../Navigation";
 import About from "../About";
 import Contact from "../Contact";
 import Projects from "../Projects";
@@ -28,7 +28,7 @@ export default function Portfolio() {
 
     return (
         <div>
-            <Nav currentPage={currentPage} handlePageChange={handlePageChange} />
+            <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
             <main>{renderPage()}</main>
         </div>
     );
