@@ -3,7 +3,7 @@ import React from 'react';
 function About() {
     return (
         <section className="title">
-            <h1 class="name">about: Francis Ryan Aguinaldo</h1>
+            <h1 class="name">About: Francis Ryan Aguinaldo</h1>
             <hr></hr>
 
             <div className="row justify-content-center">
@@ -34,7 +34,7 @@ function About() {
                         We are in the middle of a move out of state. We are moving to the Big Island in Hawaii. It's a tough decision because even though we are both implants, we grew to love the state of Washington. But an opportunity presented itself and we couldn't pass it up.
                     </p>
                     <p>
-                        View full <a href="#/resume" class="link">resume</a>
+                        View my <a href="#/resume" class="link">resume</a>
                     </p>
                 </div>
             </div>
