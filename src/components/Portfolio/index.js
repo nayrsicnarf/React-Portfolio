@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Navigation from "../Navigation";
 import About from "../About";
-import Contact from "../Contact";
 import Projects from "../Projects";
+import Contact from "../Contact";
 import Resume from "../Resume";
 
 export default function Portfolio() {

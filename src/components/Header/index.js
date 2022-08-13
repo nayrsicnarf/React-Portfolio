@@ -8,7 +8,8 @@ function Header(currentPage, handlePageChange) {
         <div>
 
             <header>
-                <div className="headerDiv">
+                hello mars
+                <div className="headerDiv" style={{ outline: "solid black 2px" }}>
 
                     <h1>Francis Ryan Aguinaldo</h1>
 
