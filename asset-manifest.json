@@ -1,13 +1,19 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.abd64e84.css",
-    "main.js": "/react-portfolio/static/js/main.9b429b03.js",
+    "main.js": "/react-portfolio/static/js/main.67c1adef.js",
+    "static/media/rrg-main.png": "/react-portfolio/static/media/rrg-main.ae27b8fe03b7aa5408f5.png",
+    "static/media/ecommerce-category-all.png": "/react-portfolio/static/media/ecommerce-category-all.5bc43f850615cf6b1a39.png",
+    "static/media/wishlistkeeper.png": "/react-portfolio/static/media/wishlistkeeper.9b8a0c516c4a07873386.png",
+    "static/media/te-demo.png": "/react-portfolio/static/media/te-demo.14d1269e696f25f5ef72.png",
+    "static/media/Note-Taker-main.png": "/react-portfolio/static/media/Note-Taker-main.5f253cdec59d3df37401.png",
+    "static/media/Francis-Selfie.jpeg": "/react-portfolio/static/media/Francis-Selfie.4b012ecdbf22cbaee309.jpeg",
     "index.html": "/react-portfolio/index.html",
     "main.abd64e84.css.map": "/react-portfolio/static/css/main.abd64e84.css.map",
-    "main.9b429b03.js.map": "/react-portfolio/static/js/main.9b429b03.js.map"
+    "main.67c1adef.js.map": "/react-portfolio/static/js/main.67c1adef.js.map"
   },
   "entrypoints": [
     "static/css/main.abd64e84.css",
-    "static/js/main.9b429b03.js"
+    "static/js/main.67c1adef.js"
   ]
 }
